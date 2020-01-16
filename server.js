@@ -18,7 +18,7 @@ app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended: false}))
 
 //setup database
-const url = "mongodb+srv://cobylyates:<Visi0nman!>@cluster0-4v2fc.mongodb.net/test?retryWrites=true&w=majority"
+const url = ""
 mongoose.connect(url , { useNewUrlParser: true, useUnifiedTopology: true }).catch(error => console.log(error))
 //setup data model
 let Message = mongoose.model('Message', { name : String, message : String})
